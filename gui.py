@@ -14,16 +14,33 @@
 
 from tkinter import *
 
-gui = Tk(className='Python Examples')
 
-# set window size
-gui.geometry("400x200")
-#set window color
-gui['bg']='green'
+window = Tk()
+# add widgets here
 
-# create button
-button = Button(gui, text='Button', width=40, height=3,  bg='#ffffff', fg='#000000', activebackground='#0052cc', activeforeground='#aaffaa')
-# add button to gui window
-button.pack()
+window.title('Eggs Encubator-Scada System')
+window.geometry("500x300")
 
-gui.mainloop()
+lbl0=Label(window, text="Incubator System", fg='red', font=("Helvetica", 16))
+lbl0.place(x=90, y=20)
+
+col1=Label(window, text="Indicator", fg='Green', font=("Helvetica", 16))
+col1.place(x=200, y=60)
+
+col2=Label(window, text="Controller", fg='green', font=("Helvetica", 16))
+col2.place(x=350, y=60)
+
+lbl1=Label(window, text="Temperature", fg='Black', font=("Helvetica", 16))
+lbl1.place(x=10, y=100)
+
+lbl2=Label(window, text="Pressure", fg='Black', font=("Helvetica", 16))
+lbl2.place(x=10, y=150)
+
+lbl3=Label(window, text="Light Intensity", fg='Black', font=("Helvetica", 16))
+lbl3.place(x=10, y=200)
+
+endlbl=Label(window, text="Change", fg='Black', font=("Helvetica", 16))
+endlbl.place(x=100, y=250)
+
+
+window.mainloop()
