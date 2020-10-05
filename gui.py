@@ -1,7 +1,7 @@
 from tkinter import *
 
 class Gui:
-    def __init__(self):
+    def __init__(window):
         window = Tk()
 
         # add widgets here
@@ -10,8 +10,8 @@ class Gui:
         window.geometry("600x300")
         # window.configure(bg='#856ff8')
 
-        lbl0=Label(window, text="Incubator System", fg='red', font=("Helvetica", 16))
-        lbl0.place(x=200, y=20)
+        topic=Label(window, text="Incubator System", fg='red', font=("Helvetica", 16))
+        topic.place(x=200, y=20)
 
         #indictor column
         col1=Label(window, text="Indicator", fg='Green', font=("Helvetica", 16))
@@ -83,8 +83,6 @@ class Gui:
         btn.place(x=250, y=250)
 
         window.mainloop()
-
-
 
 
 Gui()
